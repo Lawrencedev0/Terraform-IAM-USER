@@ -4,11 +4,11 @@ Terraform project AWS LAW **IAM User**, **IAM Group**, LAW **IAM Role** create L
 
 ## 📌 Project Overview
 
-Is project mein 3 alag IAM identities banti hain:
+This project provisions three distinct AWS IAM identities:
 
-1. **IAM User** (`LAW-user`) — Ek client ke liye AWS identity
-2. **IAM Group** (`LAW-group`) — User ko is group mein add kiya jata hai
-3. **IAM Role** (`client-role`) — EC2 service ke liye assume-able role
+1. **IAM User** (`LAW-user`) — An AWS identity created for the client.
+2. **IAM Group** (`LAW-group`) — The IAM user is added to this group to inherit its assigned permissions.
+3. **IAM Role** (`client-role`) — An IAM role that can be assumed by the EC2 service.
 
 ### Permissions
 Group and Role AWS Managed Policies attach have been done:
